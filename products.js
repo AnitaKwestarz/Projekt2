@@ -133,7 +133,7 @@ const shop = [
     price: 10.99,
     instock: 1000000000,
     description:
-      "syrop o smaku karmelowym, połączony z kawą i mlekiem, całość zblendowana z lodem",
+      "syrop o smaku karmelowym, połączony z kawą oraz mlekiem i całość zblendowana z lodem",
     imgSrc: "food/frappuccino.jpg",
     numberofUnits: 1,
     quantity: 1,
