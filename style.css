@@ -36,9 +36,7 @@ h2 {
   margin: 10px;
   font-size: 15px;
   padding: 3px;
-  /* margin-left: 10px; */
   display: flex;
-  /* margin-right: 10px; */
   height: 50px;
 }
 
@@ -69,7 +67,6 @@ h2 {
 .shop {
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: repeat(3, 150px); */
   justify-content: space-around;
 }
 
@@ -79,7 +76,6 @@ h2 {
   flex-direction: column;
   margin: 5px;
   width: 350px;
-  /* height: 169px; */
   display: flex;
   justify-content: space-between;
 }
@@ -95,7 +91,6 @@ h2 {
 }
 
 .product-name-manufacturer {
-  /* width: 145px; */
   margin-left: 15px;
   margin-top: 15px;
   margin-right: 10px;
@@ -109,7 +104,6 @@ h2 {
   width: 40%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .cart-header {
@@ -123,7 +117,7 @@ h2 {
 .cart-items {
   display: flex;
   padding: 10px;
-  /* height: 100%; */
+
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
@@ -328,11 +322,6 @@ label {
   cursor: pointer;
 }
 
-/* .cart-item-trash {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .manufacturer {
   padding: 10px;
   font-weight: bold;
@@ -368,7 +357,8 @@ label {
   box-sizing: border-box;
   flex-direction: column;
   margin: 20px;
-  /* border: 1px solid; */
+  overflow-y: scroll;
+  height: 755px;
 }
 
 .scroll-container {
@@ -376,10 +366,6 @@ label {
   display: flex;
   flex-direction: column;
 }
-
-/* input[type="number"]::-webkit-inner-spin-button {
-  opacity: 1;
-} */
 
 .item-manufacturer {
   border: 1px solid black;

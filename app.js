@@ -24,7 +24,7 @@ function renderProducts() {
                 <span class="description">${product.description}</span> 
                 <div class="products-all">
                     <div class="product-amount">$${product.price}</div>
-                    <input id=${product.id} class="quantity" min="0" type="number" value="${product.quantity}" />
+                    <input id=${product.id} class="quantity" min="1" type="number" value="${product.quantity}" />
                     <div class="plus-minus-buttons">
                       <i onclick="update('plus', ${product.id})" class="bi bi-plus"></i>
                       <i onclick="update('minus', ${product.id})" class="bi bi-dash"></i>
@@ -49,8 +49,6 @@ let update = (action, id) => {
   }
   input.value = value;
 };
-
-let basket = [];
 
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
 updateCart();
@@ -92,26 +90,6 @@ function renderSubtotal() {
   subtotalEl.innerHTML = `Grand total: ${totalPrice.toFixed(2)}$`;
   totalItemsInCartEl.innerHTML = totalItems;
 }
-// function renderTotal() {
-//   let totalManufacturerPrice = 0,
-//     totalManufacturerItems = 0;
-
-//   cart.forEach((item) => {
-//     totalPrice += item.price * item.numberOfUnits;
-//     totalItems += +item.numberOfUnits;
-//     console.log(totalItems);
-//   });
-// }
-
-// Object.keys(groupByManufacturer).forEach((manufacturer) => {
-//   let total = "";
-//   groupByManufacturer[manufacturer].forEach((item) => {
-//     total += renderTotal(item);
-//     totalManufacturerPrice += item.price * item.numberOfUnits;
-//     totalManufacturerItems += +item.numberOfUnits;
-//     // console.log(totalItems);
-//   });
-// });
 
 function renderCartItems() {
   cartItemsEl.innerHTML = "";
